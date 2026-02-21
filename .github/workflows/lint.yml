@@ -4,10 +4,10 @@ env:
   APPLICATION_NAME: app2
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
       - name: Setting pythond env
         uses: actions/setup-python@v1.1.1
       - name: Install requirement
